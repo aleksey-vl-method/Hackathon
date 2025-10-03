@@ -1,0 +1,168 @@
+JIRA ISSUES FOR: k.mifflin@method.me
+================================================================================
+Generated on: 2025-10-02
+Total Issues Found: 1
+================================================================================
+
+COMPLETE JSON DATA:
+--------------------------------------------------
+[
+  {
+    "key": "PL-57619",
+    "summary": "Big Bet #6 - Automation Investigation - Playwright",
+    "status": "Ready For Development",
+    "priority": "None",
+    "issue_type": "Story",
+    "reporter": "Michael Griffiths",
+    "assignee": "k.mifflin",
+    "created": "2025-10-02T09:12:47.179-0400",
+    "updated": "2025-10-03T05:52:33.070-0400",
+    "due_date": null,
+    "project_name": "Platform",
+    "project_key": "PL",
+    "description": "Investigate and come up with list of things we\u2019d have to do for testing.",
+    "comments_count": 0,
+    "labels": [],
+    "components": [
+      "Test Automation"
+    ],
+    "resolution": null,
+    "resolution_description": null,
+    "custom_fields": {
+      "customfield_10007": "PL-57186",
+      "customfield_10011": "0|i0e9ow:",
+      "customfield_10400": "Come up with list of tests:\n\n* Pages to create playwright script.\n* What currencies to test.\n* How to test Home currency vs outside currency (eg. whether country code is shown or just symbol)\n* What do we need to do for pre-tests (cleanup?) and post-tests (cleanup? again).",
+      "customfield_10506": 1.0,
+      "customfield_10700": "Connect",
+      "customfield_11100": "{}",
+      "customfield_11200": "<jira.resources.PropertyHolder object at 0x00000284EAEE9810>",
+      "customfield_11515": 1.6,
+      "customfield_11522": "No",
+      "customfield_11523": "Summary of Changes: EXAMPLETOREPLACE\nProjects To Deploy: EXAMPLETOREPLACE\nGit Pull Requests: EXAMPLETOREPLACE\nManual Scripts: EXAMPLETOREPLACE\nUse Cases Confirmed: EXAMPLETOREPLACE\nTesting instructions: EXAMPLETOREPLACE",
+      "customfield_11525": "Pages to test with Playwright script include all stock list pages showing money:\n\n* Contacts List --> Two tabs, Contacts and Companies\n* Estimate List\n* Invoice List\n* Sales Order List\n* Sales Receipts List\n* Payments List\n* Bills List\n* Purchase Order List\n* Accounts List\n* Items List\n* Activity List\n* Opportunity List\n\nCurrencies to test should include those that are popular and those that share symbols (ie. Home Currency USD, Contact Currencies CAD/AUD, GBP, EUR, JPY). As this Big Bet is meant to target UK users, a Home Currency of GBP should likely also be tested.\n\nTo test appearance of Home vs Foreign Currency, multiple contacts can be created with their own transactions. At least one of these contacts should have the Home Currency and at least one should have a Foreign Currency.\n\nPre-tests usually include signing into the correct account and clearing data from each page that will be tested to ensure there are no conflicts. Post-tests usually include deleting any data that has been created during the test. There are sometimes pre-built functions for each of these actions, but it depends on the page.\n\nTest structure should be as follows:\n\n# Pre-Test: Sign-in to account on desired server\n# Display Settings: Confirm appearance of new preference, set Currency Preference to show symbols\n# Accounts: Clean old accounts (make inactive), make new account(s), confirm symbols appear\n# Items: Clean old items, make new item(s), confirm symbols appear\n# Contacts: Clean old contacts, make at least 2 customers (1 Home, 1 Foreign) and 2 vendors (1 Home, 1 Foreign), confirm symbols & codes appear in both the contacts and companies tables\n# Purchase Orders (POs): Clean old POs, make new POs, confirm symbols & codes appear\n# The above should be repeated for Bills, Opportunities, Estimates, Sales Orders, Invoices, Payments, Sales Receipts, and Activities\n# Display Settings: set Currency Preference not to show symbols\n# Activities: Confirm symbols & codes do not appear, delete created activities\n# The above should be repeated for Sales Receipts, Payments, Invoices, Sales Orders, Estimates, Opportunities, Bills, Purchase Orders, Contacts, Items, and Accounts\n# Display: set Currency Preference to show symbols\n\n*Note: The above test may be broken into smaller tests if required, and so long as the required fields can be filled (i.e. Purchase Orders need an item and a vendor and should be tested with both vendor currencies, Home and Foreign).",
+      "customfield_11526": "No",
+      "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+      "customfield_11592": "No"
+    }
+  }
+]
+
+================================================================================
+
+FORMATTED ISSUE SUMMARIES:
+--------------------------------------------------
+
+ISSUE #1: PL-57619
+------------------------------
+Summary: Big Bet #6 - Automation Investigation - Playwright
+Status: Ready For Development
+Priority: None
+Issue Type: Story
+Assignee: k.mifflin
+Project: Platform (PL)
+Created: 2025-10-02T09:12:47.179-0400
+Updated: 2025-10-03T05:52:33.070-0400
+Description: Investigate and come up with list of things we’d have to do for testing.
+Custom Fields:
+  customfield_10007: PL-57186
+  customfield_10011: 0|i0e9ow:
+  customfield_10400: Come up with list of tests:
+
+* Pages to create playwright script.
+* What currencies to test.
+* How to test Home currency vs outside currency (eg. whether country code is shown or just symbol)
+* What do we need to do for pre-tests (cleanup?) and post-tests (cleanup? again).
+  customfield_10506: 1.0
+  customfield_10700: Connect
+  customfield_11100: {}
+  customfield_11200: <jira.resources.PropertyHolder object at 0x00000284EAEE9810>
+  customfield_11515: 1.6
+  customfield_11522: No
+  customfield_11523: Summary of Changes: EXAMPLETOREPLACE
+Projects To Deploy: EXAMPLETOREPLACE
+Git Pull Requests: EXAMPLETOREPLACE
+Manual Scripts: EXAMPLETOREPLACE
+Use Cases Confirmed: EXAMPLETOREPLACE
+Testing instructions: EXAMPLETOREPLACE
+  customfield_11525: Pages to test with Playwright script include all stock list pages showing money:
+
+* Contacts List --> Two tabs, Contacts and Companies
+* Estimate List
+* Invoice List
+* Sales Order List
+* Sales Receipts List
+* Payments List
+* Bills List
+* Purchase Order List
+* Accounts List
+* Items List
+* Activity List
+* Opportunity List
+
+Currencies to test should include those that are popular and those that share symbols (ie. Home Currency USD, Contact Currencies CAD/AUD, GBP, EUR, JPY). As this Big Bet is meant to target UK users, a Home Currency of GBP should likely also be tested.
+
+To test appearance of Home vs Foreign Currency, multiple contacts can be created with their own transactions. At least one of these contacts should have the Home Currency and at least one should have a Foreign Currency.
+
+Pre-tests usually include signing into the correct account and clearing data from each page that will be tested to ensure there are no conflicts. Post-tests usually include deleting any data that has been created during the test. There are sometimes pre-built functions for each of these actions, but it depends on the page.
+
+Test structure should be as follows:
+
+# Pre-Test: Sign-in to account on desired server
+# Display Settings: Confirm appearance of new preference, set Currency Preference to show symbols
+# Accounts: Clean old accounts (make inactive), make new account(s), confirm symbols appear
+# Items: Clean old items, make new item(s), confirm symbols appear
+# Contacts: Clean old contacts, make at least 2 customers (1 Home, 1 Foreign) and 2 vendors (1 Home, 1 Foreign), confirm symbols & codes appear in both the contacts and companies tables
+# Purchase Orders (POs): Clean old POs, make new POs, confirm symbols & codes appear
+# The above should be repeated for Bills, Opportunities, Estimates, Sales Orders, Invoices, Payments, Sales Receipts, and Activities
+# Display Settings: set Currency Preference not to show symbols
+# Activities: Confirm symbols & codes do not appear, delete created activities
+# The above should be repeated for Sales Receipts, Payments, Invoices, Sales Orders, Estimates, Opportunities, Bills, Purchase Orders, Contacts, Items, and Accounts
+# Display: set Currency Preference to show symbols
+
+*Note: The above test may be broken into smaller tests if required, and so long as the required fields can be filled (i.e. Purchase Orders need an item and a vendor and should be tested with both vendor currencies, Home and Foreign).
+  customfield_11526: No
+  customfield_11527: You can find more information about best practices for creating Jira tickets here:
+  customfield_11592: No
+
+RAW JSON FOR PL-57619:
+{
+  "key": "PL-57619",
+  "summary": "Big Bet #6 - Automation Investigation - Playwright",
+  "status": "Ready For Development",
+  "priority": "None",
+  "issue_type": "Story",
+  "reporter": "Michael Griffiths",
+  "assignee": "k.mifflin",
+  "created": "2025-10-02T09:12:47.179-0400",
+  "updated": "2025-10-03T05:52:33.070-0400",
+  "due_date": null,
+  "project_name": "Platform",
+  "project_key": "PL",
+  "description": "Investigate and come up with list of things we\u2019d have to do for testing.",
+  "comments_count": 0,
+  "labels": [],
+  "components": [
+    "Test Automation"
+  ],
+  "resolution": null,
+  "resolution_description": null,
+  "custom_fields": {
+    "customfield_10007": "PL-57186",
+    "customfield_10011": "0|i0e9ow:",
+    "customfield_10400": "Come up with list of tests:\n\n* Pages to create playwright script.\n* What currencies to test.\n* How to test Home currency vs outside currency (eg. whether country code is shown or just symbol)\n* What do we need to do for pre-tests (cleanup?) and post-tests (cleanup? again).",
+    "customfield_10506": 1.0,
+    "customfield_10700": "Connect",
+    "customfield_11100": "{}",
+    "customfield_11200": "<jira.resources.PropertyHolder object at 0x00000284EAEE9810>",
+    "customfield_11515": 1.6,
+    "customfield_11522": "No",
+    "customfield_11523": "Summary of Changes: EXAMPLETOREPLACE\nProjects To Deploy: EXAMPLETOREPLACE\nGit Pull Requests: EXAMPLETOREPLACE\nManual Scripts: EXAMPLETOREPLACE\nUse Cases Confirmed: EXAMPLETOREPLACE\nTesting instructions: EXAMPLETOREPLACE",
+    "customfield_11525": "Pages to test with Playwright script include all stock list pages showing money:\n\n* Contacts List --> Two tabs, Contacts and Companies\n* Estimate List\n* Invoice List\n* Sales Order List\n* Sales Receipts List\n* Payments List\n* Bills List\n* Purchase Order List\n* Accounts List\n* Items List\n* Activity List\n* Opportunity List\n\nCurrencies to test should include those that are popular and those that share symbols (ie. Home Currency USD, Contact Currencies CAD/AUD, GBP, EUR, JPY). As this Big Bet is meant to target UK users, a Home Currency of GBP should likely also be tested.\n\nTo test appearance of Home vs Foreign Currency, multiple contacts can be created with their own transactions. At least one of these contacts should have the Home Currency and at least one should have a Foreign Currency.\n\nPre-tests usually include signing into the correct account and clearing data from each page that will be tested to ensure there are no conflicts. Post-tests usually include deleting any data that has been created during the test. There are sometimes pre-built functions for each of these actions, but it depends on the page.\n\nTest structure should be as follows:\n\n# Pre-Test: Sign-in to account on desired server\n# Display Settings: Confirm appearance of new preference, set Currency Preference to show symbols\n# Accounts: Clean old accounts (make inactive), make new account(s), confirm symbols appear\n# Items: Clean old items, make new item(s), confirm symbols appear\n# Contacts: Clean old contacts, make at least 2 customers (1 Home, 1 Foreign) and 2 vendors (1 Home, 1 Foreign), confirm symbols & codes appear in both the contacts and companies tables\n# Purchase Orders (POs): Clean old POs, make new POs, confirm symbols & codes appear\n# The above should be repeated for Bills, Opportunities, Estimates, Sales Orders, Invoices, Payments, Sales Receipts, and Activities\n# Display Settings: set Currency Preference not to show symbols\n# Activities: Confirm symbols & codes do not appear, delete created activities\n# The above should be repeated for Sales Receipts, Payments, Invoices, Sales Orders, Estimates, Opportunities, Bills, Purchase Orders, Contacts, Items, and Accounts\n# Display: set Currency Preference to show symbols\n\n*Note: The above test may be broken into smaller tests if required, and so long as the required fields can be filled (i.e. Purchase Orders need an item and a vendor and should be tested with both vendor currencies, Home and Foreign).",
+    "customfield_11526": "No",
+    "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+    "customfield_11592": "No"
+  }
+}
+
+==================================================
+

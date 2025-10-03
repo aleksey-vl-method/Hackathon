@@ -1,0 +1,850 @@
+JIRA ISSUES FOR: c.zhao@method.me
+================================================================================
+Generated on: 2025-10-02
+Total Issues Found: 6
+================================================================================
+
+COMPLETE JSON DATA:
+--------------------------------------------------
+[
+  {
+    "key": "PL-57666",
+    "summary": "Growth areas AODA compliance analysis IV (Dashboard)",
+    "status": "Ready For Development",
+    "priority": "None",
+    "issue_type": "TechStory",
+    "reporter": "Charlie Zhao",
+    "assignee": "Charlie Zhao",
+    "created": "2025-10-02T16:47:12.477-0400",
+    "updated": "2025-10-03T09:54:38.737-0400",
+    "due_date": null,
+    "project_name": "Platform",
+    "project_key": "PL",
+    "description": "Growth areas AODA compliance analysis\n\n# Signup\n# Onboarding\n# Subscription\n# Dashboard",
+    "comments_count": 0,
+    "labels": [],
+    "components": [
+      "Billing / Subscription",
+      "Onboarding",
+      "SignUp"
+    ],
+    "resolution": null,
+    "resolution_description": null,
+    "custom_fields": {
+      "customfield_10007": "PL-57489",
+      "customfield_10011": "0|i0e9wo:",
+      "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+      "customfield_10506": 1.0,
+      "customfield_10700": "Growth",
+      "customfield_11100": "{}",
+      "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021716E09810>",
+      "customfield_11522": "No",
+      "customfield_11523": "Summary of Changes: \nProjects To Deploy: N/A\nGit Pull Requests: N/A\nManual Scripts: N/A\nUse Cases Confirmed: N/A\nTesting instructions: N/A",
+      "customfield_11525": "Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.\n\n\n\nConfluence:\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] \n\n\n\nFor axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.",
+      "customfield_11526": "No",
+      "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+      "customfield_11583": "Charlie Zhao",
+      "customfield_11584": "Charlie Zhao",
+      "customfield_11592": "No",
+      "customfield_11663": "Spike/Investigation"
+    }
+  },
+  {
+    "key": "PL-57608",
+    "summary": "Growth areas AODA compliance analysis III (Onboarding)",
+    "status": "Ready For Development",
+    "priority": "None",
+    "issue_type": "TechStory",
+    "reporter": "Charlie Zhao",
+    "assignee": "Charlie Zhao",
+    "created": "2025-10-01T15:19:46.957-0400",
+    "updated": "2025-10-03T09:55:21.065-0400",
+    "due_date": null,
+    "project_name": "Platform",
+    "project_key": "PL",
+    "description": "Growth areas AODA compliance analysis\n\n# Signup\n# Onboarding\n# Subscription\n# Dashboard",
+    "comments_count": 0,
+    "labels": [],
+    "components": [
+      "Billing / Subscription",
+      "Onboarding",
+      "SignUp"
+    ],
+    "resolution": null,
+    "resolution_description": null,
+    "custom_fields": {
+      "customfield_10007": "PL-57489",
+      "customfield_10011": "0|i0e9nc:",
+      "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+      "customfield_10506": 1.0,
+      "customfield_10700": "Growth",
+      "customfield_11100": "{}",
+      "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021716E0E520>",
+      "customfield_11522": "No",
+      "customfield_11523": "Summary of Changes: Added 3 confluence pages, one for tips on navigating onboarding flow, and 1 for axe Devtool/accessibility insight for windows audit.\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/197165130/Navigating+through+Onboarding+Flow+Tips|https://method.atlassian.net/wiki/spaces/SD/pages/197165130/Navigating+through+Onboarding+Flow+Tips|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/197722134/Audit+with+axe+DevTools+Onboarding+Flow|https://method.atlassian.net/wiki/spaces/SD/pages/197722134/Audit+with+axe+DevTools+Onboarding+Flow|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/197689591/Audit+with+Accessibility+Insights+for+Web|https://method.atlassian.net/wiki/spaces/SD/pages/197689591/Audit+with+Accessibility+Insights+for+Web|smart-link] \nProjects To Deploy: N/A\nGit Pull Requests: N/A\nManual Scripts: N/A\nUse Cases Confirmed: N/A\nTesting instructions: N/A",
+      "customfield_11525": "Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.\n\n\n\nConfluence:\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] \n\n\n\nFor axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.",
+      "customfield_11526": "No",
+      "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+      "customfield_11583": "Charlie Zhao",
+      "customfield_11584": "Charlie Zhao",
+      "customfield_11592": "No",
+      "customfield_11663": "Spike/Investigation"
+    }
+  },
+  {
+    "key": "PL-57560",
+    "summary": "Growth areas AODA compliance analysis II (Subscription)",
+    "status": "Ready For Development",
+    "priority": "None",
+    "issue_type": "TechStory",
+    "reporter": "Kevin Mistry",
+    "assignee": "Charlie Zhao",
+    "created": "2025-09-30T09:30:58.630-0400",
+    "updated": "2025-10-03T09:55:08.334-0400",
+    "due_date": null,
+    "project_name": "Platform",
+    "project_key": "PL",
+    "description": "Growth areas AODA compliance analysis\n\n# Signup\n# Onboarding\n# Subscription\n# Dashboard",
+    "comments_count": 1,
+    "labels": [],
+    "components": [
+      "Billing / Subscription",
+      "Onboarding",
+      "SignUp"
+    ],
+    "resolution": null,
+    "resolution_description": null,
+    "custom_fields": {
+      "customfield_10001": "2025-10-03T08:51:52.619-0400",
+      "customfield_10007": "PL-57489",
+      "customfield_10011": "0|i0e9d4:",
+      "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+      "customfield_10506": 1.0,
+      "customfield_10700": "Growth",
+      "customfield_11100": "{}",
+      "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021716E0FCE0>",
+      "customfield_11522": "No",
+      "customfield_11523": "Summary of Changes: \n\n4 Audits added, using axe DevTools and Accessibility Insights for Web for both subscription and billing pages. Includes error locations/problems/solutions\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195002369/Audit+with+axe+DevTools+Subscription+page|https://method.atlassian.net/wiki/spaces/SD/pages/195002369/Audit+with+axe+DevTools+Subscription+page|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195002411/Audit+with+Accessibility+Insights+for+Web+Audit+Subscription|https://method.atlassian.net/wiki/spaces/SD/pages/195002411/Audit+with+Accessibility+Insights+for+Web+Audit+Subscription|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195035138/Audit+with+axe+DevTools+Billing|https://method.atlassian.net/wiki/spaces/SD/pages/195035138/Audit+with+axe+DevTools+Billing|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195100673/Audit+with+Accessibility+Insights+for+Web+Audit+Billing|https://method.atlassian.net/wiki/spaces/SD/pages/195100673/Audit+with+Accessibility+Insights+for+Web+Audit+Billing|smart-link] \n\n\nProjects To Deploy: N/A\nGit Pull Requests: N/A\nManual Scripts: N/A\nUse Cases Confirmed: N/A\nTesting instructions: N/A",
+      "customfield_11525": "Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.\n\n\n\nConfluence:\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] \n\n\n\nFor axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.",
+      "customfield_11526": "No",
+      "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+      "customfield_11583": "Charlie Zhao",
+      "customfield_11584": "Charlie Zhao",
+      "customfield_11592": "No",
+      "customfield_11663": "Spike/Investigation"
+    }
+  },
+  {
+    "key": "PL-56224",
+    "summary": "Signup - Remind email signup to verify email address",
+    "status": "Ready For Development",
+    "priority": "P2 - Normal",
+    "issue_type": "Story",
+    "reporter": "Courtney Riddell",
+    "assignee": "Charlie Zhao",
+    "created": "2025-07-30T15:40:48.031-0400",
+    "updated": "2025-10-02T22:17:45.775-0400",
+    "due_date": null,
+    "project_name": "Platform",
+    "project_key": "PL",
+    "description": "Recently we added the email security around verifying the first signups email address before they send en email. \n\nThey receive the verify your email request but they are not TOLD to look out for it O...",
+    "comments_count": 1,
+    "labels": [],
+    "components": [
+      "SignUp"
+    ],
+    "resolution": null,
+    "resolution_description": null,
+    "custom_fields": {
+      "customfield_10011": "0|i00jkm:zzzzzzzzzzzuzzzzzwdv8jwl32sv",
+      "customfield_10400": "# When a new signup finished onboarding (Land on the home screen/dashboard)\n## Email signup through website ONLY\n# Then - Show a toast message to inform them that they must verify their email to use email features. \n## Title Verify your email\n### description: \u201cCheck your inbox and confirm your email address to start leveraging the email features in Method.\u201d\n## Placement: Top right corner\n## Colour: blue\n## Leave the toast there until dismissed.\n## Add a dismiss function \u201cX\u201d\n### When clicked close the toast message.\n### If not clicked leave the toast open - no timed dismissal\n## If there are other toast messages show them in a list - Do not skip showing this one. ",
+      "customfield_10506": 1.0,
+      "customfield_10700": "Growth",
+      "customfield_11100": "{}",
+      "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021717A195B0>",
+      "customfield_11515": 3.0,
+      "customfield_11522": "No",
+      "customfield_11523": "Summary of Changes: EXAMPLETOREPLACE\nProjects To Deploy: EXAMPLETOREPLACE\nGit Pull Requests: EXAMPLETOREPLACE\nManual Scripts: EXAMPLETOREPLACE\nUse Cases Confirmed: EXAMPLETOREPLACE\nTesting instructions: EXAMPLETOREPLACE",
+      "customfield_11526": "No",
+      "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+      "customfield_11582": [
+        "<jira.resources.PropertyHolder object at 0x0000021717A1A3F0>"
+      ],
+      "customfield_11592": "No"
+    }
+  },
+  {
+    "key": "PL-54510",
+    "summary": "Dashboard App Layout Lost",
+    "status": "Ready For Development",
+    "priority": "P3 - Low",
+    "issue_type": "Bug",
+    "reporter": "Yasar Zaman",
+    "assignee": "Charlie Zhao",
+    "created": "2025-05-14T15:20:02.704-0400",
+    "updated": "2025-10-02T22:19:41.227-0400",
+    "due_date": null,
+    "project_name": "Platform",
+    "project_key": "PL",
+    "description": "*Description of the Issue:*\n\u2028Every few weeks, the Dashboard layout for MethodSupport shifts a bit to the right. The saved layout is lost as some apps get pushed to the top. You can see here in the scr...",
+    "comments_count": 4,
+    "labels": [],
+    "components": [
+      "Dashboard"
+    ],
+    "resolution": null,
+    "resolution_description": null,
+    "custom_fields": {
+      "customfield_10001": "2025-05-14T16:06:08.782-0400",
+      "customfield_10011": "0|i00jkm:zzzzzzzzzzzuzzzzzwdv8jwsi",
+      "customfield_10200": "61325",
+      "customfield_10400": "Expected Result:\nie load time is subsecond, with no console errors EXAMPLETOREPLACE\n\nActual Result:\nie load time is 2-5 seconds, with console errors EXAMPLETOREPLACE\n\n\nThe Bug is Considered Fixed When:\n\nex1 The issue no longer occurs under the same conditions. EXAMPLETOREPLACE\nex2 Automated tests cover the fix to prevent regression. EXAMPLETOREPLACE\nex3 The fix does not introduce new related issues. EXAMPLETOREPLACE",
+      "customfield_10506": 1.0,
+      "customfield_10700": "Growth",
+      "customfield_11100": "{}",
+      "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021717A1AB10>",
+      "customfield_11515": 13.0,
+      "customfield_11522": "No",
+      "customfield_11523": "Summary of Changes: EXAMPLETOREPLACE\r\nProjects To Deploy: EXAMPLETOREPLACE\r\nGit Pull Requests: EXAMPLETOREPLACE\r\nManual Scripts: EXAMPLETOREPLACE\r\nUse Cases Confirmed: EXAMPLETOREPLACE\r\nTesting instructions: EXAMPLETOREPLACE",
+      "customfield_11526": "No",
+      "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+      "customfield_11540": "Pending",
+      "customfield_11541": "Pending",
+      "customfield_11592": "No"
+    }
+  },
+  {
+    "key": "PL-49260",
+    "summary": "Add unit tests to Billing api",
+    "status": "Ready For Development",
+    "priority": "P2 - Normal",
+    "issue_type": "TechStory",
+    "reporter": "Gozde Bulut",
+    "assignee": "Charlie Zhao",
+    "created": "2024-10-03T08:31:58.455-0400",
+    "updated": "2025-10-02T22:20:41.517-0400",
+    "due_date": null,
+    "project_name": "Platform",
+    "project_key": "PL",
+    "description": "We need to find a way to add unit tests for endpoints/services based on different cases/flows in this legacy api",
+    "comments_count": 1,
+    "labels": [
+      "TechRoadmap"
+    ],
+    "components": [
+      "Billing / Subscription"
+    ],
+    "resolution": null,
+    "resolution_description": null,
+    "custom_fields": {
+      "customfield_10001": "2025-02-06T12:02:10.770-0500",
+      "customfield_10011": "0|i00jkm:zzzzzzzzzzzuzzzzzwdv9",
+      "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+      "customfield_10506": 1.0,
+      "customfield_10700": "Growth",
+      "customfield_11100": "{pullrequest={dataType=pullrequest, state=OPEN, stateCount=1}, json={\"cachedValue\":{\"errors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":1,\"lastUpdated\":\"2025-04-02T13:43:15.000-0400\",\"stateCount\":1,\"state\":\"OPEN\",\"dataType\":\"pullrequest\",\"open\":true},\"byInstanceType\":{\"GitHub\":{\"count\":1,\"name\":\"GitHub\"}}}}},\"isStale\":true}}",
+      "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021717A20D60>",
+      "customfield_11515": 4.0,
+      "customfield_11522": "No",
+      "customfield_11523": "Summary of Changes:\nProjects To Deploy:\nGit Pull Requests:\nManual Scripts:\nUse Cases Confirmed:\nTesting instructions:",
+      "customfield_11525": "Created a new Test Project (Nunit) .Net Framework 4.6.1\n\nNeed to mock the interfaces in order to create unit test. right now we are not doing that. So I broke it to smaller levels. Will need to refactor slightly to use IoCManager.Context.Get<T>() to inject the services in the controllers",
+      "customfield_11526": "No",
+      "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+      "customfield_11583": "Katrina Mehta",
+      "customfield_11592": "No"
+    }
+  }
+]
+
+================================================================================
+
+FORMATTED ISSUE SUMMARIES:
+--------------------------------------------------
+
+ISSUE #1: PL-57666
+------------------------------
+Summary: Growth areas AODA compliance analysis IV (Dashboard)
+Status: Ready For Development
+Priority: None
+Issue Type: TechStory
+Assignee: Charlie Zhao
+Project: Platform (PL)
+Created: 2025-10-02T16:47:12.477-0400
+Updated: 2025-10-03T09:54:38.737-0400
+Description: Growth areas AODA compliance analysis
+
+# Signup
+# Onboarding
+# Subscription
+# Dashboard
+Custom Fields:
+  customfield_10007: PL-57489
+  customfield_10011: 0|i0e9wo:
+  customfield_10400: *Ensure you go through the checklist and attach it to the story or PRD*
+
+[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] 
+
+*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*	
+
+[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]
+  customfield_10506: 1.0
+  customfield_10700: Growth
+  customfield_11100: {}
+  customfield_11200: <jira.resources.PropertyHolder object at 0x0000021716E09810>
+  customfield_11522: No
+  customfield_11523: Summary of Changes: 
+Projects To Deploy: N/A
+Git Pull Requests: N/A
+Manual Scripts: N/A
+Use Cases Confirmed: N/A
+Testing instructions: N/A
+  customfield_11525: Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.
+
+
+
+Confluence:
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] 
+
+
+
+For axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.
+  customfield_11526: No
+  customfield_11527: You can find more information about best practices for creating Jira tickets here:
+  customfield_11583: Charlie Zhao
+  customfield_11584: Charlie Zhao
+  customfield_11592: No
+  customfield_11663: Spike/Investigation
+
+RAW JSON FOR PL-57666:
+{
+  "key": "PL-57666",
+  "summary": "Growth areas AODA compliance analysis IV (Dashboard)",
+  "status": "Ready For Development",
+  "priority": "None",
+  "issue_type": "TechStory",
+  "reporter": "Charlie Zhao",
+  "assignee": "Charlie Zhao",
+  "created": "2025-10-02T16:47:12.477-0400",
+  "updated": "2025-10-03T09:54:38.737-0400",
+  "due_date": null,
+  "project_name": "Platform",
+  "project_key": "PL",
+  "description": "Growth areas AODA compliance analysis\n\n# Signup\n# Onboarding\n# Subscription\n# Dashboard",
+  "comments_count": 0,
+  "labels": [],
+  "components": [
+    "Billing / Subscription",
+    "Onboarding",
+    "SignUp"
+  ],
+  "resolution": null,
+  "resolution_description": null,
+  "custom_fields": {
+    "customfield_10007": "PL-57489",
+    "customfield_10011": "0|i0e9wo:",
+    "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+    "customfield_10506": 1.0,
+    "customfield_10700": "Growth",
+    "customfield_11100": "{}",
+    "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021716E09810>",
+    "customfield_11522": "No",
+    "customfield_11523": "Summary of Changes: \nProjects To Deploy: N/A\nGit Pull Requests: N/A\nManual Scripts: N/A\nUse Cases Confirmed: N/A\nTesting instructions: N/A",
+    "customfield_11525": "Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.\n\n\n\nConfluence:\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] \n\n\n\nFor axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.",
+    "customfield_11526": "No",
+    "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+    "customfield_11583": "Charlie Zhao",
+    "customfield_11584": "Charlie Zhao",
+    "customfield_11592": "No",
+    "customfield_11663": "Spike/Investigation"
+  }
+}
+
+==================================================
+
+ISSUE #2: PL-57608
+------------------------------
+Summary: Growth areas AODA compliance analysis III (Onboarding)
+Status: Ready For Development
+Priority: None
+Issue Type: TechStory
+Assignee: Charlie Zhao
+Project: Platform (PL)
+Created: 2025-10-01T15:19:46.957-0400
+Updated: 2025-10-03T09:55:21.065-0400
+Description: Growth areas AODA compliance analysis
+
+# Signup
+# Onboarding
+# Subscription
+# Dashboard
+Custom Fields:
+  customfield_10007: PL-57489
+  customfield_10011: 0|i0e9nc:
+  customfield_10400: *Ensure you go through the checklist and attach it to the story or PRD*
+
+[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] 
+
+*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*	
+
+[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]
+  customfield_10506: 1.0
+  customfield_10700: Growth
+  customfield_11100: {}
+  customfield_11200: <jira.resources.PropertyHolder object at 0x0000021716E0E520>
+  customfield_11522: No
+  customfield_11523: Summary of Changes: Added 3 confluence pages, one for tips on navigating onboarding flow, and 1 for axe Devtool/accessibility insight for windows audit.
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/197165130/Navigating+through+Onboarding+Flow+Tips|https://method.atlassian.net/wiki/spaces/SD/pages/197165130/Navigating+through+Onboarding+Flow+Tips|smart-link] 
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/197722134/Audit+with+axe+DevTools+Onboarding+Flow|https://method.atlassian.net/wiki/spaces/SD/pages/197722134/Audit+with+axe+DevTools+Onboarding+Flow|smart-link] 
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/197689591/Audit+with+Accessibility+Insights+for+Web|https://method.atlassian.net/wiki/spaces/SD/pages/197689591/Audit+with+Accessibility+Insights+for+Web|smart-link] 
+Projects To Deploy: N/A
+Git Pull Requests: N/A
+Manual Scripts: N/A
+Use Cases Confirmed: N/A
+Testing instructions: N/A
+  customfield_11525: Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.
+
+
+
+Confluence:
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] 
+
+
+
+For axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.
+  customfield_11526: No
+  customfield_11527: You can find more information about best practices for creating Jira tickets here:
+  customfield_11583: Charlie Zhao
+  customfield_11584: Charlie Zhao
+  customfield_11592: No
+  customfield_11663: Spike/Investigation
+
+RAW JSON FOR PL-57608:
+{
+  "key": "PL-57608",
+  "summary": "Growth areas AODA compliance analysis III (Onboarding)",
+  "status": "Ready For Development",
+  "priority": "None",
+  "issue_type": "TechStory",
+  "reporter": "Charlie Zhao",
+  "assignee": "Charlie Zhao",
+  "created": "2025-10-01T15:19:46.957-0400",
+  "updated": "2025-10-03T09:55:21.065-0400",
+  "due_date": null,
+  "project_name": "Platform",
+  "project_key": "PL",
+  "description": "Growth areas AODA compliance analysis\n\n# Signup\n# Onboarding\n# Subscription\n# Dashboard",
+  "comments_count": 0,
+  "labels": [],
+  "components": [
+    "Billing / Subscription",
+    "Onboarding",
+    "SignUp"
+  ],
+  "resolution": null,
+  "resolution_description": null,
+  "custom_fields": {
+    "customfield_10007": "PL-57489",
+    "customfield_10011": "0|i0e9nc:",
+    "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+    "customfield_10506": 1.0,
+    "customfield_10700": "Growth",
+    "customfield_11100": "{}",
+    "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021716E0E520>",
+    "customfield_11522": "No",
+    "customfield_11523": "Summary of Changes: Added 3 confluence pages, one for tips on navigating onboarding flow, and 1 for axe Devtool/accessibility insight for windows audit.\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/197165130/Navigating+through+Onboarding+Flow+Tips|https://method.atlassian.net/wiki/spaces/SD/pages/197165130/Navigating+through+Onboarding+Flow+Tips|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/197722134/Audit+with+axe+DevTools+Onboarding+Flow|https://method.atlassian.net/wiki/spaces/SD/pages/197722134/Audit+with+axe+DevTools+Onboarding+Flow|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/197689591/Audit+with+Accessibility+Insights+for+Web|https://method.atlassian.net/wiki/spaces/SD/pages/197689591/Audit+with+Accessibility+Insights+for+Web|smart-link] \nProjects To Deploy: N/A\nGit Pull Requests: N/A\nManual Scripts: N/A\nUse Cases Confirmed: N/A\nTesting instructions: N/A",
+    "customfield_11525": "Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.\n\n\n\nConfluence:\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] \n\n\n\nFor axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.",
+    "customfield_11526": "No",
+    "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+    "customfield_11583": "Charlie Zhao",
+    "customfield_11584": "Charlie Zhao",
+    "customfield_11592": "No",
+    "customfield_11663": "Spike/Investigation"
+  }
+}
+
+==================================================
+
+ISSUE #3: PL-57560
+------------------------------
+Summary: Growth areas AODA compliance analysis II (Subscription)
+Status: Ready For Development
+Priority: None
+Issue Type: TechStory
+Assignee: Charlie Zhao
+Project: Platform (PL)
+Created: 2025-09-30T09:30:58.630-0400
+Updated: 2025-10-03T09:55:08.334-0400
+Description: Growth areas AODA compliance analysis
+
+# Signup
+# Onboarding
+# Subscription
+# Dashboard
+Custom Fields:
+  customfield_10001: 2025-10-03T08:51:52.619-0400
+  customfield_10007: PL-57489
+  customfield_10011: 0|i0e9d4:
+  customfield_10400: *Ensure you go through the checklist and attach it to the story or PRD*
+
+[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] 
+
+*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*	
+
+[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]
+  customfield_10506: 1.0
+  customfield_10700: Growth
+  customfield_11100: {}
+  customfield_11200: <jira.resources.PropertyHolder object at 0x0000021716E0FCE0>
+  customfield_11522: No
+  customfield_11523: Summary of Changes: 
+
+4 Audits added, using axe DevTools and Accessibility Insights for Web for both subscription and billing pages. Includes error locations/problems/solutions
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/195002369/Audit+with+axe+DevTools+Subscription+page|https://method.atlassian.net/wiki/spaces/SD/pages/195002369/Audit+with+axe+DevTools+Subscription+page|smart-link] 
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/195002411/Audit+with+Accessibility+Insights+for+Web+Audit+Subscription|https://method.atlassian.net/wiki/spaces/SD/pages/195002411/Audit+with+Accessibility+Insights+for+Web+Audit+Subscription|smart-link] 
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/195035138/Audit+with+axe+DevTools+Billing|https://method.atlassian.net/wiki/spaces/SD/pages/195035138/Audit+with+axe+DevTools+Billing|smart-link] 
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/195100673/Audit+with+Accessibility+Insights+for+Web+Audit+Billing|https://method.atlassian.net/wiki/spaces/SD/pages/195100673/Audit+with+Accessibility+Insights+for+Web+Audit+Billing|smart-link] 
+
+
+Projects To Deploy: N/A
+Git Pull Requests: N/A
+Manual Scripts: N/A
+Use Cases Confirmed: N/A
+Testing instructions: N/A
+  customfield_11525: Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.
+
+
+
+Confluence:
+
+[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] 
+
+
+
+For axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.
+  customfield_11526: No
+  customfield_11527: You can find more information about best practices for creating Jira tickets here:
+  customfield_11583: Charlie Zhao
+  customfield_11584: Charlie Zhao
+  customfield_11592: No
+  customfield_11663: Spike/Investigation
+
+RAW JSON FOR PL-57560:
+{
+  "key": "PL-57560",
+  "summary": "Growth areas AODA compliance analysis II (Subscription)",
+  "status": "Ready For Development",
+  "priority": "None",
+  "issue_type": "TechStory",
+  "reporter": "Kevin Mistry",
+  "assignee": "Charlie Zhao",
+  "created": "2025-09-30T09:30:58.630-0400",
+  "updated": "2025-10-03T09:55:08.334-0400",
+  "due_date": null,
+  "project_name": "Platform",
+  "project_key": "PL",
+  "description": "Growth areas AODA compliance analysis\n\n# Signup\n# Onboarding\n# Subscription\n# Dashboard",
+  "comments_count": 1,
+  "labels": [],
+  "components": [
+    "Billing / Subscription",
+    "Onboarding",
+    "SignUp"
+  ],
+  "resolution": null,
+  "resolution_description": null,
+  "custom_fields": {
+    "customfield_10001": "2025-10-03T08:51:52.619-0400",
+    "customfield_10007": "PL-57489",
+    "customfield_10011": "0|i0e9d4:",
+    "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+    "customfield_10506": 1.0,
+    "customfield_10700": "Growth",
+    "customfield_11100": "{}",
+    "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021716E0FCE0>",
+    "customfield_11522": "No",
+    "customfield_11523": "Summary of Changes: \n\n4 Audits added, using axe DevTools and Accessibility Insights for Web for both subscription and billing pages. Includes error locations/problems/solutions\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195002369/Audit+with+axe+DevTools+Subscription+page|https://method.atlassian.net/wiki/spaces/SD/pages/195002369/Audit+with+axe+DevTools+Subscription+page|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195002411/Audit+with+Accessibility+Insights+for+Web+Audit+Subscription|https://method.atlassian.net/wiki/spaces/SD/pages/195002411/Audit+with+Accessibility+Insights+for+Web+Audit+Subscription|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195035138/Audit+with+axe+DevTools+Billing|https://method.atlassian.net/wiki/spaces/SD/pages/195035138/Audit+with+axe+DevTools+Billing|smart-link] \n\n[https://method.atlassian.net/wiki/spaces/SD/pages/195100673/Audit+with+Accessibility+Insights+for+Web+Audit+Billing|https://method.atlassian.net/wiki/spaces/SD/pages/195100673/Audit+with+Accessibility+Insights+for+Web+Audit+Billing|smart-link] \n\n\nProjects To Deploy: N/A\nGit Pull Requests: N/A\nManual Scripts: N/A\nUse Cases Confirmed: N/A\nTesting instructions: N/A",
+    "customfield_11525": "Will run axe Dev tools and Accessibility for web tools on each of Signup, Onboarding, and Subscription to test for WCAG 2.2 violations.\n\n\n\nConfluence:\n\n[https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|https://method.atlassian.net/wiki/spaces/SD/pages/193757502/Audit+with+axe+DevTools+Signup+page|smart-link] \n\n\n\nFor axe Dev, will run full page scan, and put analysis on confluence documents. Will run fastpass insights for accessibility insight for windows and also put the analysis on the confluence documents.",
+    "customfield_11526": "No",
+    "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+    "customfield_11583": "Charlie Zhao",
+    "customfield_11584": "Charlie Zhao",
+    "customfield_11592": "No",
+    "customfield_11663": "Spike/Investigation"
+  }
+}
+
+==================================================
+
+ISSUE #4: PL-56224
+------------------------------
+Summary: Signup - Remind email signup to verify email address
+Status: Ready For Development
+Priority: P2 - Normal
+Issue Type: Story
+Assignee: Charlie Zhao
+Project: Platform (PL)
+Created: 2025-07-30T15:40:48.031-0400
+Updated: 2025-10-02T22:17:45.775-0400
+Description: Recently we added the email security around verifying the first signups email address before they send en email. 
+
+They receive the verify your email request but they are not TOLD to look out for it O...
+Custom Fields:
+  customfield_10011: 0|i00jkm:zzzzzzzzzzzuzzzzzwdv8jwl32sv
+  customfield_10400: # When a new signup finished onboarding (Land on the home screen/dashboard)
+## Email signup through website ONLY
+# Then - Show a toast message to inform them that they must verify their email to use email features. 
+## Title Verify your email
+### description: “Check your inbox and confirm your email address to start leveraging the email features in Method.”
+## Placement: Top right corner
+## Colour: blue
+## Leave the toast there until dismissed.
+## Add a dismiss function “X”
+### When clicked close the toast message.
+### If not clicked leave the toast open - no timed dismissal
+## If there are other toast messages show them in a list - Do not skip showing this one. 
+  customfield_10506: 1.0
+  customfield_10700: Growth
+  customfield_11100: {}
+  customfield_11200: <jira.resources.PropertyHolder object at 0x0000021717A195B0>
+  customfield_11515: 3.0
+  customfield_11522: No
+  customfield_11523: Summary of Changes: EXAMPLETOREPLACE
+Projects To Deploy: EXAMPLETOREPLACE
+Git Pull Requests: EXAMPLETOREPLACE
+Manual Scripts: EXAMPLETOREPLACE
+Use Cases Confirmed: EXAMPLETOREPLACE
+Testing instructions: EXAMPLETOREPLACE
+  customfield_11526: No
+  customfield_11527: You can find more information about best practices for creating Jira tickets here:
+  customfield_11582: [<jira.resources.PropertyHolder object at 0x0000021717A1A3F0>]
+  customfield_11592: No
+
+RAW JSON FOR PL-56224:
+{
+  "key": "PL-56224",
+  "summary": "Signup - Remind email signup to verify email address",
+  "status": "Ready For Development",
+  "priority": "P2 - Normal",
+  "issue_type": "Story",
+  "reporter": "Courtney Riddell",
+  "assignee": "Charlie Zhao",
+  "created": "2025-07-30T15:40:48.031-0400",
+  "updated": "2025-10-02T22:17:45.775-0400",
+  "due_date": null,
+  "project_name": "Platform",
+  "project_key": "PL",
+  "description": "Recently we added the email security around verifying the first signups email address before they send en email. \n\nThey receive the verify your email request but they are not TOLD to look out for it O...",
+  "comments_count": 1,
+  "labels": [],
+  "components": [
+    "SignUp"
+  ],
+  "resolution": null,
+  "resolution_description": null,
+  "custom_fields": {
+    "customfield_10011": "0|i00jkm:zzzzzzzzzzzuzzzzzwdv8jwl32sv",
+    "customfield_10400": "# When a new signup finished onboarding (Land on the home screen/dashboard)\n## Email signup through website ONLY\n# Then - Show a toast message to inform them that they must verify their email to use email features. \n## Title Verify your email\n### description: \u201cCheck your inbox and confirm your email address to start leveraging the email features in Method.\u201d\n## Placement: Top right corner\n## Colour: blue\n## Leave the toast there until dismissed.\n## Add a dismiss function \u201cX\u201d\n### When clicked close the toast message.\n### If not clicked leave the toast open - no timed dismissal\n## If there are other toast messages show them in a list - Do not skip showing this one. ",
+    "customfield_10506": 1.0,
+    "customfield_10700": "Growth",
+    "customfield_11100": "{}",
+    "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021717A195B0>",
+    "customfield_11515": 3.0,
+    "customfield_11522": "No",
+    "customfield_11523": "Summary of Changes: EXAMPLETOREPLACE\nProjects To Deploy: EXAMPLETOREPLACE\nGit Pull Requests: EXAMPLETOREPLACE\nManual Scripts: EXAMPLETOREPLACE\nUse Cases Confirmed: EXAMPLETOREPLACE\nTesting instructions: EXAMPLETOREPLACE",
+    "customfield_11526": "No",
+    "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+    "customfield_11582": [
+      "<jira.resources.PropertyHolder object at 0x0000021717A1A3F0>"
+    ],
+    "customfield_11592": "No"
+  }
+}
+
+==================================================
+
+ISSUE #5: PL-54510
+------------------------------
+Summary: Dashboard App Layout Lost
+Status: Ready For Development
+Priority: P3 - Low
+Issue Type: Bug
+Assignee: Charlie Zhao
+Project: Platform (PL)
+Created: 2025-05-14T15:20:02.704-0400
+Updated: 2025-10-02T22:19:41.227-0400
+Description: *Description of the Issue:*
+ Every few weeks, the Dashboard layout for MethodSupport shifts a bit to the right. The saved layout is lost as some apps get pushed to the top. You can see here in the scr...
+Custom Fields:
+  customfield_10001: 2025-05-14T16:06:08.782-0400
+  customfield_10011: 0|i00jkm:zzzzzzzzzzzuzzzzzwdv8jwsi
+  customfield_10200: 61325
+  customfield_10400: Expected Result:
+ie load time is subsecond, with no console errors EXAMPLETOREPLACE
+
+Actual Result:
+ie load time is 2-5 seconds, with console errors EXAMPLETOREPLACE
+
+
+The Bug is Considered Fixed When:
+
+ex1 The issue no longer occurs under the same conditions. EXAMPLETOREPLACE
+ex2 Automated tests cover the fix to prevent regression. EXAMPLETOREPLACE
+ex3 The fix does not introduce new related issues. EXAMPLETOREPLACE
+  customfield_10506: 1.0
+  customfield_10700: Growth
+  customfield_11100: {}
+  customfield_11200: <jira.resources.PropertyHolder object at 0x0000021717A1AB10>
+  customfield_11515: 13.0
+  customfield_11522: No
+  customfield_11523: Summary of Changes: EXAMPLETOREPLACE
+Projects To Deploy: EXAMPLETOREPLACE
+Git Pull Requests: EXAMPLETOREPLACE
+Manual Scripts: EXAMPLETOREPLACE
+Use Cases Confirmed: EXAMPLETOREPLACE
+Testing instructions: EXAMPLETOREPLACE
+  customfield_11526: No
+  customfield_11527: You can find more information about best practices for creating Jira tickets here:
+  customfield_11540: Pending
+  customfield_11541: Pending
+  customfield_11592: No
+
+RAW JSON FOR PL-54510:
+{
+  "key": "PL-54510",
+  "summary": "Dashboard App Layout Lost",
+  "status": "Ready For Development",
+  "priority": "P3 - Low",
+  "issue_type": "Bug",
+  "reporter": "Yasar Zaman",
+  "assignee": "Charlie Zhao",
+  "created": "2025-05-14T15:20:02.704-0400",
+  "updated": "2025-10-02T22:19:41.227-0400",
+  "due_date": null,
+  "project_name": "Platform",
+  "project_key": "PL",
+  "description": "*Description of the Issue:*\n\u2028Every few weeks, the Dashboard layout for MethodSupport shifts a bit to the right. The saved layout is lost as some apps get pushed to the top. You can see here in the scr...",
+  "comments_count": 4,
+  "labels": [],
+  "components": [
+    "Dashboard"
+  ],
+  "resolution": null,
+  "resolution_description": null,
+  "custom_fields": {
+    "customfield_10001": "2025-05-14T16:06:08.782-0400",
+    "customfield_10011": "0|i00jkm:zzzzzzzzzzzuzzzzzwdv8jwsi",
+    "customfield_10200": "61325",
+    "customfield_10400": "Expected Result:\nie load time is subsecond, with no console errors EXAMPLETOREPLACE\n\nActual Result:\nie load time is 2-5 seconds, with console errors EXAMPLETOREPLACE\n\n\nThe Bug is Considered Fixed When:\n\nex1 The issue no longer occurs under the same conditions. EXAMPLETOREPLACE\nex2 Automated tests cover the fix to prevent regression. EXAMPLETOREPLACE\nex3 The fix does not introduce new related issues. EXAMPLETOREPLACE",
+    "customfield_10506": 1.0,
+    "customfield_10700": "Growth",
+    "customfield_11100": "{}",
+    "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021717A1AB10>",
+    "customfield_11515": 13.0,
+    "customfield_11522": "No",
+    "customfield_11523": "Summary of Changes: EXAMPLETOREPLACE\r\nProjects To Deploy: EXAMPLETOREPLACE\r\nGit Pull Requests: EXAMPLETOREPLACE\r\nManual Scripts: EXAMPLETOREPLACE\r\nUse Cases Confirmed: EXAMPLETOREPLACE\r\nTesting instructions: EXAMPLETOREPLACE",
+    "customfield_11526": "No",
+    "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+    "customfield_11540": "Pending",
+    "customfield_11541": "Pending",
+    "customfield_11592": "No"
+  }
+}
+
+==================================================
+
+ISSUE #6: PL-49260
+------------------------------
+Summary: Add unit tests to Billing api
+Status: Ready For Development
+Priority: P2 - Normal
+Issue Type: TechStory
+Assignee: Charlie Zhao
+Project: Platform (PL)
+Created: 2024-10-03T08:31:58.455-0400
+Updated: 2025-10-02T22:20:41.517-0400
+Description: We need to find a way to add unit tests for endpoints/services based on different cases/flows in this legacy api
+Labels: TechRoadmap
+Custom Fields:
+  customfield_10001: 2025-02-06T12:02:10.770-0500
+  customfield_10011: 0|i00jkm:zzzzzzzzzzzuzzzzzwdv9
+  customfield_10400: *Ensure you go through the checklist and attach it to the story or PRD*
+
+[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] 
+
+*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*	
+
+[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]
+  customfield_10506: 1.0
+  customfield_10700: Growth
+  customfield_11100: {pullrequest={dataType=pullrequest, state=OPEN, stateCount=1}, json={"cachedValue":{"errors":[],"summary":{"pullrequest":{"overall":{"count":1,"lastUpdated":"2025-04-02T13:43:15.000-0400","stateCount":1,"state":"OPEN","dataType":"pullrequest","open":true},"byInstanceType":{"GitHub":{"count":1,"name":"GitHub"}}}}},"isStale":true}}
+  customfield_11200: <jira.resources.PropertyHolder object at 0x0000021717A20D60>
+  customfield_11515: 4.0
+  customfield_11522: No
+  customfield_11523: Summary of Changes:
+Projects To Deploy:
+Git Pull Requests:
+Manual Scripts:
+Use Cases Confirmed:
+Testing instructions:
+  customfield_11525: Created a new Test Project (Nunit) .Net Framework 4.6.1
+
+Need to mock the interfaces in order to create unit test. right now we are not doing that. So I broke it to smaller levels. Will need to refactor slightly to use IoCManager.Context.Get<T>() to inject the services in the controllers
+  customfield_11526: No
+  customfield_11527: You can find more information about best practices for creating Jira tickets here:
+  customfield_11583: Katrina Mehta
+  customfield_11592: No
+
+RAW JSON FOR PL-49260:
+{
+  "key": "PL-49260",
+  "summary": "Add unit tests to Billing api",
+  "status": "Ready For Development",
+  "priority": "P2 - Normal",
+  "issue_type": "TechStory",
+  "reporter": "Gozde Bulut",
+  "assignee": "Charlie Zhao",
+  "created": "2024-10-03T08:31:58.455-0400",
+  "updated": "2025-10-02T22:20:41.517-0400",
+  "due_date": null,
+  "project_name": "Platform",
+  "project_key": "PL",
+  "description": "We need to find a way to add unit tests for endpoints/services based on different cases/flows in this legacy api",
+  "comments_count": 1,
+  "labels": [
+    "TechRoadmap"
+  ],
+  "components": [
+    "Billing / Subscription"
+  ],
+  "resolution": null,
+  "resolution_description": null,
+  "custom_fields": {
+    "customfield_10001": "2025-02-06T12:02:10.770-0500",
+    "customfield_10011": "0|i00jkm:zzzzzzzzzzzuzzzzzwdv9",
+    "customfield_10400": "*Ensure you go through the checklist and attach it to the story or PRD*\n\n[Checklist Template|https://docs.google.com/spreadsheets/d/1Fqo1PBkBPQecbo5BPtN61xkvgEt-G2n5qHJYtNi7R3o/edit#gid=2079390865] \n\n*Ensure you go through the Non-Functional requirements and take them into consideration while grooming*\t\n\n[Non-functional requirements|https://docs.google.com/document/d/1N7LwztkimP_eKyVJO8v_bhzYcOXCjNJlj_ejG7mlMAw]",
+    "customfield_10506": 1.0,
+    "customfield_10700": "Growth",
+    "customfield_11100": "{pullrequest={dataType=pullrequest, state=OPEN, stateCount=1}, json={\"cachedValue\":{\"errors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":1,\"lastUpdated\":\"2025-04-02T13:43:15.000-0400\",\"stateCount\":1,\"state\":\"OPEN\",\"dataType\":\"pullrequest\",\"open\":true},\"byInstanceType\":{\"GitHub\":{\"count\":1,\"name\":\"GitHub\"}}}}},\"isStale\":true}}",
+    "customfield_11200": "<jira.resources.PropertyHolder object at 0x0000021717A20D60>",
+    "customfield_11515": 4.0,
+    "customfield_11522": "No",
+    "customfield_11523": "Summary of Changes:\nProjects To Deploy:\nGit Pull Requests:\nManual Scripts:\nUse Cases Confirmed:\nTesting instructions:",
+    "customfield_11525": "Created a new Test Project (Nunit) .Net Framework 4.6.1\n\nNeed to mock the interfaces in order to create unit test. right now we are not doing that. So I broke it to smaller levels. Will need to refactor slightly to use IoCManager.Context.Get<T>() to inject the services in the controllers",
+    "customfield_11526": "No",
+    "customfield_11527": "You can find more information about best practices for creating Jira tickets here:",
+    "customfield_11583": "Katrina Mehta",
+    "customfield_11592": "No"
+  }
+}
+
+==================================================
+
