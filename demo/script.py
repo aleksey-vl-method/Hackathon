@@ -15,9 +15,10 @@ import re
 from typing import List, Dict, Any
 from dotenv import load_dotenv
 
-# Add parent directory to path to import jiralib
+# Add parent directory to path to import jiralib and linkly
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from jiralib import get_jira_connection, get_active_jira_issues_by_email, extract_issue_details
+from linkly import create_linkly_oneshot_link
 
 # OpenAI imports
 from openai import OpenAI
@@ -32,6 +33,10 @@ class PhishingEmailGenerator:
         self.openai_client = self.setup_openai_client()
         self.jira_tickets = []
         self.context = ""
+        # Load Linkly credentials from environment
+        self.linkly_email = os.getenv("LINKLY_EMAIL")
+        self.linkly_api_key = os.getenv("LINKLY_API_KEY")
+        self.linkly_workspace_id = os.getenv("LINKLY_WORKSPACE_ID")
         
     def setup_openai_client(self):
         """Setup OpenAI client with API key from environment variables."""
@@ -244,6 +249,70 @@ class PhishingEmailGenerator:
             print(f"Error generating phishing email: {str(e)}")
             return None
     
+    def replace_links_with_linkly(self, phishing_email: str) -> str:
+        """
+        Replace all instances of LINK_HERE with actual Linkly shortened links
+        
+        Args:
+            phishing_email: Email content with LINK_HERE placeholders
+            
+        Returns:
+            Email content with real shortened links
+        """
+        if "LINK_HERE" not in phishing_email:
+            print("⚠ No LINK_HERE placeholders found in email")
+            return phishing_email
+        
+        # Check if Linkly credentials are available
+        if not all([self.linkly_email, self.linkly_api_key, self.linkly_workspace_id]):
+            print("⚠ Linkly credentials not found in environment variables")
+            print("  Skipping link replacement. Please set LINKLY_EMAIL, LINKLY_API_KEY, and LINKLY_WORKSPACE_ID")
+            return phishing_email
+        
+        # Convert workspace_id to int
+        try:
+            workspace_id = int(self.linkly_workspace_id)
+        except ValueError:
+            print("⚠ LINKLY_WORKSPACE_ID must be an integer")
+            return phishing_email
+        
+        # Count placeholders
+        placeholder_count = phishing_email.count("LINK_HERE")
+        print(f"🔗 Found {placeholder_count} LINK_HERE placeholder(s)")
+        
+        # Create a Linkly shortened link
+        print("🔗 Creating Linkly shortened link...")
+        try:
+            link_response = create_linkly_oneshot_link(
+                email=self.linkly_email,
+                api_key=self.linkly_api_key,
+                workspace_id=workspace_id,
+                url="https://www.method.me"
+            )
+            
+            if link_response:
+                short_url = link_response['full_url']
+                
+                # If we found a short URL, use it
+                if short_url:
+                    print(f"✓ Created shortened link: {short_url}")
+                    
+                    # Replace all instances of LINK_HERE with the shortened link
+                    updated_email = phishing_email.replace("LINK_HERE", short_url)
+                    print(f"✓ Replaced {placeholder_count} placeholder(s) with shortened link")
+                    
+                    return updated_email
+                else:
+                    print(f"⚠ Failed to find short URL in response. Response keys: {list(link_response.keys())}")
+                    return phishing_email
+            else:
+                print("⚠ Failed to create Linkly link - no response received")
+                return phishing_email
+                
+        except Exception as e:
+            print(f"⚠ Error creating Linkly link: {str(e)}")
+            return phishing_email
+    
     def save_results(self, phishing_email: str, target_email: str, filename: str = None):
         """
         Save the generated results to file
@@ -408,6 +477,11 @@ def main():
     )
     
     if phishing_email:
+        # Step 3.5: Replace LINK_HERE placeholders with Linkly shortened links
+        print("\nSTEP 3.5: Replacing link placeholders...")
+        phishing_email = generator.replace_links_with_linkly(phishing_email)
+        
+        # Continue with the rest
         print("\n" + "=" * 60)
         print("GENERATED PHISHING EMAIL:")
         print("=" * 60)
