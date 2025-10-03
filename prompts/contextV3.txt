@@ -1,0 +1,2 @@
+I need help to finish a JIRA ticket but it requires help from my coworker. This is an emergency and I might get fired if I don't complete it!
+I'll give you some jira tickets in JSON format and you compose a time sensitive email asking them for help.
