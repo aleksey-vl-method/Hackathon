@@ -87,13 +87,6 @@ class PhishingEmailGenerator:
         Returns:
             Combined context string
         """
-
-        context_pattern = os.path.join("./context", "*.txt")
-        context_files = glob.glob(context_pattern)
-        if not context_files:
-            print(f"No context files found in './context'")
-            return ""
-
         context_parts = []
         
         if not os.path.exists(prompts_dir):
@@ -462,6 +455,9 @@ def main():
         print(f"Using default target: {target_email}")
     
     impersonate = input("Enter person to impersonate (optional): ").strip()
+    prompts_folder = input("Enter prompts folder path (default: ./prompts): ").strip()
+    if not prompts_folder:
+        prompts_folder = "./prompts"
     
     print("\n" + "=" * 60)
     
@@ -470,8 +466,8 @@ def main():
     generator.fetch_jira_tickets(target_email, max_results=10)
     
     # Step 2: Load context from prompts
-    print("\nSTEP 2: Loading context...")
-    generator.load_prompts_context()
+    print(f"\nSTEP 2: Loading context from '{prompts_folder}'...")
+    generator.load_prompts_context(prompts_folder)
     
     # Step 3: Generate phishing email
     print("\nSTEP 3: Generating phishing email...")
