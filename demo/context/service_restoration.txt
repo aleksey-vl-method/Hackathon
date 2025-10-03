@@ -1,0 +1,102 @@
+This policy outlines how we manage and respond to urgent issues across all environments used in the development, testing, and delivery of our software. It defines clear expectations for ownership, restoration timelines, and escalation paths for incidents occurring in production, staging, shared testing, named environments, and local development. By formalizing how we approach service restoration, we aim to ensure high availability, smooth delivery workflows, and minimal disruption to our teams and customers.
+
+Combined: Environments, Ownership, and Post-Incident Expectations
+Environment
+
+Description
+
+Primary Owner(s)
+
+Escalation Path
+
+Alerting/Logging
+
+Target Triage Time
+
+Production
+
+Live, customer-facing systems
+
+Services: Teams
+Instances/DBs: Devops
+
+TL/DevOps → CrossTeam → Eng Leadership
+
+Xmatters, Datadog, logstash, #SWAT
+
+Immediate (P0/P1)
+
+Staging (Warehouse)
+
+Pre-release regression and QA environment used for final testing
+
+QA Lead, Release Manager
+
+QA Lead → Release Manager → DevOps
+
+#release and team channels, shared dev logstash
+
+Within 1 business day
+
+Named Instances
+
+Team-owned persistent sandboxes for QA, demos, and in-progress features
+
+Owning Team, DevOps
+
+Dev/QA →TL → CrossTeam
+
+shared dev logstash
+
+1 to 2 business day
+
+AMI Instances
+
+Shared CI-integrated auto-deploy environment for cross-team testing
+
+DevOps, Owning Team
+
+Dev/QA →TL → DevOps
+
+centralized logstash, log files
+
+1 week
+
+Local Development
+
+Individual developer machines for day-to-day engineering work
+
+Each Developer / Owning Team
+
+Dev →TL → CrossTeam
+
+centralized logstash, log files
+
+Developer-dependent
+
+Environment Differentiation & Policy Expectations
+Production
+This is the highest-priority environment and any disruptions here must be treated as critical.  We rely on XMatters alerts for Leads/DevOps to respond to any outages. Production incidents are customer-impacting and may result in data loss or system outages. All teams are expected to follow SLAs and complete a Post-Incident Report (PIR) for P0 issues. 
+
+Staging (Warehouse)
+Used for automated regression and final QA sign-off before release. Breakages in this environment can delay production deployments. QA and the Release Manager own this environment, but development teams are expected to collaborate in resolving issues when caused by their changes.  In the case the outage is not code related, DevOps should be relied upon after following troubleshooting steps.
+
+Named Instance Environments
+These are team-managed, persistent testing environments used for manual testing, intuit regression, or in-progress feature work. While lower priority, teams are expected to restore these within one business day and not leave broken environments unattended.  Code Owners should be relied upon to ensure their code is functioning there for all changes.
+
+AMI Test Environments
+A Dev/QA spun up environment that runs isolated from other AMIs or named instance Environments. These environments can be used to build and maintain individual kanban tickets, or long lived sprint development for continuous Design/QA/PM feedback.  DevOps owns the environment but all teams share responsibility for keeping it stable.  Eventually we would like to run small regression suites here manually, and then automated for quicker feedback on code changes.
+
+Local Development
+This is the developer’s personal working environment. While it’s self-managed, repeated systemic issues (e.g. dependency problems, environment drift) should be raised to the team TL. Developers are expected to maintain and troubleshoot their local setups independently unless systemic.
+
+Best Practices
+Communicate early – If you cause or detect an issue, inform the affected owners or teams as soon as possible.
+
+First responder mindset – If your code causes the breakage, take responsibility for triaging and initiating the fix.
+
+Test before merging – Ensure your changes pass relevant checks locally and in isolated environments before pushing to AMI or Warehouse.
+
+Log and monitor – All shared environments must have sufficient observability to diagnose issues quickly.
+
+Don’t leave things broken – Restore shared or demo environments promptly, especially if they block QA or other teams.
