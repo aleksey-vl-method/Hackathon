@@ -2,29 +2,45 @@ PHISHING EMAIL GENERATOR RESULTS
 ==================================================
 
 Target Email: c.zhao@method.me
-Generated on: C:\Hackathon\Basic\demo
-JIRA Tickets Used: 0
+Generated on: C:\hackathon\Hackathon\demo
+JIRA Tickets Used: 6
 ==================================================
 
 GENERATED PHISHING EMAIL:
 ------------------------------
-Subject: Urgent: Immediate Review Needed on Compliance Issue 🚨
+Subject: Urgent Action Required: Compliance Issue Identified in Your Dashboard Layout
 
-Hi Charlie,
+From: IT Support <it.support@method.me>
 
-I hope this message finds you well. I'm reaching out to you directly because we've hit a critical snag with one of your JIRA tickets - PL-57666, focusing on AODA compliance for the Growth Area Dashboard. Given your direct involvement and the sensitive nature of compliance, your immediate review is crucial.
+Date: [Today's Date]
 
-Here's the kicker - Courtney Riddell mentioned in our last exec meeting that a significant client demo hinges on the updates you're making. They're flying in first thing tomorrow morning, hoping to see our new compliant features in action! 😅 We need to ensure everything is buttoned-up, and your expertise is vital here.
+To: Charlie Zhao <c.zhao@method.me>
 
-Could you please take a moment to review the ticket and add your latest updates? Here’s the link to the ticket: [LINK_HERE](LINK_HERE). Your prompt action could literally make or break this key client relationship.
+---
 
-Thanks for jumping on this so quickly, Charlie. I really appreciate your effort on such short notice!
+Dear Charlie,
 
-Best,
-Paul Jackson
-CEO - Method Technologies
-p.jackson@method.me
-+1 (555) 123-4567
+We have detected a critical issue with your account that requires immediate attention. Our recent system audit revealed a compliance discrepancy related to the Dashboard layout configurations you are currently managing. It appears that there has been a recurring misalignment causing potential data exposure, which contravenes our internal compliance standards.
+
+To prevent any potential data breaches and ensure full compliance with our AODA and IT security protocols, it is crucial that you verify your dashboard configuration immediately. Please follow the steps below to rectify this issue:
+
+1. Log in to your account securely using this link: [Fake Link]
+2. Follow the prompted instructions to review and verify your dashboard settings.
+3. Update any configurations that do not meet our compliance standards.
+
+Failure to comply with this verification process within 24 hours of receiving this email will result in temporary suspension of your account privileges until the issue is resolved.
+
+We understand the inconvenience this may cause but ensuring the security and compliance of our IT environment is our top priority. Thank you for your immediate attention to this urgent matter.
+
+Best Regards,
+
+[Your Name]
+IT Support Team
+Method Technologies
+
+---
+
+Note: This email is a simulation for cybersecurity awareness training purposes only.
 
 ==================================================
 

@@ -1,0 +1,196 @@
+🧑‍💼 Organizational Info
+This section outlines the current leadership structure and team compositions within the Software Development Department and its cross-functional collaborators. It includes key people to know and an overview of each development team’s responsibilities and members.
+
+🧠 Key People
+Name
+
+Role
+
+Area of Ownership
+
+@Paul Jackson 
+
+CEO
+
+Overall company leadership
+
+@Justin Porter 
+
+Chief of Staff
+
+Strategic coordination and special projects
+
+@Saudia Allie 
+
+HR & Finance
+
+People operations, hiring, finance
+
+@Sarah Trimble 
+
+CRO
+
+Chief Revenue Officer
+
+@Inder Dhaliwal 
+
+Manager of Customer Success and Support
+
+Customer-facing support org
+
+@Nelson De Miranda 
+
+Director of Sales and PS
+
+Sales team leadership
+
+@Ashur Shamon 
+
+Professional Services Lead
+
+Implementation, consulting, and training services
+
+@Benjamin Rodriguez 
+
+Director of Product
+
+Product strategy and team direction
+
+@Richard Pangborn 
+
+Software Development Manager
+
+Engineering team management and team operations
+
+@Arash Pakbaz 
+
+Manager, Architecture & DevOps
+
+DevOps, infrastructure, architecture standards
+
+@John Jones 
+
+Manager, QA
+
+Quality strategy, standards, and QA team leadership
+
+@Alexander Ballard 
+
+No-Code Architect Lead
+
+Technical leadership on No-Code platforms
+
+🧑‍💻 Engineering Teams
+Each cross-functional team includes a Product Manager, Team Lead, Designer, QA, and Developers, and is responsible for a specific functional area of the platform.
+
+🚀 No Code Next Gen Team
+PM: @Michael Melo 
+
+TL: @Alexander Ballard 
+
+Designer: @Diego Fuchs 
+
+QA: @Mila Fadzeyeva 
+
+Developers: @Aaron Padlesky, @Aryan Patel , @Ben Grady , @Aleksey Van Leeuwarden 
+
+Mission: Make no-code tools more accessible and robust through initiatives like App Builder, Fork Removal, event-driven architecture, and AI-powered workflows.
+
+📈 Growth Team
+PM: @Courtney Riddell 
+
+TL: @Kevin Mistry 
+
+Designer: @Tyler Copeland 
+
+QA: @Daniel Mau 
+
+Developers: @Katrina Mehta , @Rafay Ahmed 
+
+Focus: Optimize the conversion funnel post-registration, maintaining Account, Sign-Up, Analytics, and Subscriptions.
+
+🧾 Admin Team
+PM: @Arshi Sayed 
+
+TL: @San Oo 
+
+Designer: @Dawid Zurowski 
+
+QA: @z.li 
+
+Developers: @Oksana Serhieieva, @Matthew Ali , @Brendan Farrell 
+
+Scope: Platform core services: App Shell, Mobile Web, Preferences, Portal Views, Import/Export, and Classic Accounts.
+
+🔌 Connect Team
+PM: @Harmanpreet Kaur 
+
+TL: @Michael Griffiths 
+
+Designer: TBD
+
+QA: @Daniel Ma 
+
+Developers: @Anton Serhieiev , @Arush Awasthi 
+
+Responsibilities: Build and maintain third-party integrations (e.g., QuickBooks, Xero), sync engine infrastructure.
+
+🧑‍🤝‍🧑 Customer Management Team
+PM: @Phil Cote 
+
+TL: @Hammad Ali Hashmi 
+
+Designer: @Dawid Zurowski 
+
+QA: @Manu Pothen 
+
+Developers: @Gozde Bulut , @Mohammad Hossein 
+
+Focus: CRM improvements, app install/update, reporting APIs, and templates.
+
+📦 Service Delivery Team
+PM: @Nicolas Peralta Baron 
+
+TL: @Hammad Ali Hashmi 
+
+Designer: @Elaine Chow 
+
+QA: @Benjamin Weiler 
+
+Developers: @Reinoldo Caceres, @Mohammad Syed Raihaan , @Chirag Rajpal 
+
+Work: Enhancing tools and processes for field and mobile service delivery. Owns Field Services App and Native Mobile features.
+
+🛍 Sales Management Team
+PM: @John Miranda 
+
+TL: @Prithwiraj Das 
+
+Designer: @b.stevenson 
+
+QA: @Grace Lu 
+
+Developers: @Kanishka Deshpande , @Nirmith Victor D'Almeida , @Fareen Khan 
+
+Responsibilities: Sales tooling and components, including the component library and related stock apps.
+
+💳 Transactions Team
+PM: @Hannah Johnston (Unlicensed) 
+
+TL: @Prithwiraj Das 
+
+Designer: @b.stevenson 
+
+QA: @Andy Zhu 
+
+Developers: @Sammy Yusuf , @Elliot Ruiz , @Liam Stickney 
+
+Scope: Transactions, payments, portals, and email deliverability infrastructure.
+
+🛠 DevOps Team
+TL: @Arash Pakbaz 
+
+Developer/Ops: @Matt Pourasadi , @Ismael Sagullo 
+
+Focus: Architecture, CI/CD tooling, internal platform enablement, cross-team technical initiatives.
+
