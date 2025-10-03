@@ -4,9 +4,11 @@ from jira import JIRA
 
 load_dotenv()
 api_key = os.getenv("JIRA_API_TOKEN")
-print(f"API Key: {api_key}")
+user_email = os.getenv("JIRA_EMAIL")
+# print(f"API Key: {api_key}")
 
-jira = JIRA(server = 'https://method.atlassian.net/', basic_auth=('c.zhao@method.me', api_key))
+
+jira = JIRA(server = 'https://method.atlassian.net/', basic_auth=(user_email, api_key))
 
 server_info = jira.server_info()
 print(f"Connected to JIRA: {server_info}")
