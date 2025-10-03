@@ -17,7 +17,6 @@ if issues:
     
     for issue_data in issues:
         print(issue_data)
-       
 else:
     print("No issues found or error occurred.")
 
