@@ -115,7 +115,11 @@ def main():
         test_connection(config)
 
         # Fetch issues (customize the JQL query as needed)
-        jql_query = "assignee = currentUser() AND resolution = Unresolved ORDER BY created DESC"
+        # jql_query = "assignee = currentUser() AND resolution = Unresolved ORDER BY created DESC"
+        # jql_query = f"assignee = {config['jira_email']} AND resolution = Unresolved ORDER BY created DESC"
+        # jql_query = f"assignee=0 AND resolution = Unresolved ORDER BY created DESC"
+        jql_query = "assignee = currentUser()"
+
         issues = fetch_issues(config, jql_query, max_results=50)
 
         # Display results

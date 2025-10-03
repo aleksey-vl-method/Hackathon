@@ -1,7 +1,34 @@
 from dotenv import load_dotenv
 import os
 from jira import JIRA
+<<<<<<< HEAD
 from typing import List, Dict, Any, Optional
+=======
+
+load_dotenv()
+api_key = os.getenv("JIRA_API_TOKEN")
+user_email = os.getenv("JIRA_EMAIL")
+# print(f"API Key: {api_key}")
+
+
+jira = JIRA(server = 'https://method.atlassian.net/', basic_auth=(user_email, api_key))
+
+server_info = jira.server_info()
+print(f"Connected to JIRA: {server_info}")
+
+myself = jira.myself()
+
+# First, let's get all available fields to understand the custom field mapping
+print("\n--- AVAILABLE JIRA FIELDS ---")
+fields = jira.fields()
+custom_fields = [f for f in fields if f['custom']]
+print(f"Found {len(custom_fields)} custom fields:")
+for field in custom_fields[:10]:  # Show first 10 custom fields
+    print(f"- {field['id']}: {field['name']}")
+
+my_issues = jira.search_issues('assignee = "d.mau@method.me"')
+print(f"\nFound {len(my_issues)} issues assigned to me:")
+>>>>>>> 8686bdde38c49cc02dc316acc65dfd2d2c52010f
 
 
 def get_jira_connection() -> JIRA:
