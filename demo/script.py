@@ -195,14 +195,13 @@ class PhishingEmailGenerator:
         return "\n".join(context_parts)
     
     def generate_phishing_email(self, target_email: str, impersonate: str = "", 
-                              custom_prompt: str = "", model: str = "gpt-4-turbo") -> str:
+                              model: str = "gpt-4-turbo") -> str:
         """
         Generate phishing email using GPT-4 with context and JIRA tickets
         
         Args:
             target_email: Email of the target user
             impersonate: Person to impersonate in the email
-            custom_prompt: Custom prompt for the attack scenario
             model: OpenAI model to use
             
         Returns:
@@ -215,7 +214,7 @@ class PhishingEmailGenerator:
         jira_context = self.create_jira_tickets_context()
         
         # Build the prompt
-        base_prompt = custom_prompt if custom_prompt else "Generate a phishing email for cybersecurity awareness training"
+        base_prompt = "Generate a phishing email for cybersecurity awareness training"
         
         if impersonate:
             base_prompt += f" The email should appear to come from {impersonate}."
@@ -456,7 +455,6 @@ def main():
         print(f"Using default target: {target_email}")
     
     impersonate = input("Enter person to impersonate (optional): ").strip()
-    custom_prompt = input("Enter custom attack scenario (optional): ").strip()
     
     print("\n" + "=" * 60)
     
@@ -472,8 +470,7 @@ def main():
     print("\nSTEP 3: Generating phishing email...")
     phishing_email = generator.generate_phishing_email(
         target_email=target_email,
-        impersonate=impersonate,
-        custom_prompt=custom_prompt
+        impersonate=impersonate
     )
     
     if phishing_email:
