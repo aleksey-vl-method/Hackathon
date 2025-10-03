@@ -44,7 +44,7 @@ if __name__ == "__main__":
 			email=email,
 			api_key=api_key,
 			workspace_id=workspace_id,
-			url="https://www.example.com/your-destination",
+			url="https://www.method.me",
 			name="My New Tracking Link",
 			utm_source="newsletter"
 		)
