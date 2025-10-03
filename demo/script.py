@@ -9,6 +9,9 @@ import os
 import sys
 import glob
 import json
+import tkinter as tk
+from tkinter import scrolledtext, messagebox
+import re
 from typing import List, Dict, Any
 from dotenv import load_dotenv
 
@@ -273,6 +276,101 @@ class PhishingEmailGenerator:
         except Exception as e:
             print(f"✗ Error saving results: {str(e)}")
 
+    def show_email_gui(self, phishing_email: str, target_email: str):
+        """
+        Display the generated phishing email in a Tkinter GUI
+        
+        Args:
+            phishing_email: Generated phishing email content
+            target_email: Target email address
+        """
+        root = tk.Tk()
+        root.title("🎯 Phishing Email Training Viewer")
+        root.geometry("900x700")
+        root.configure(bg='#f0f0f0')
+        
+        # Extract subject from email if present
+        subject_match = re.search(r'Subject: (.+)', phishing_email)
+        subject = subject_match.group(1) if subject_match else "Phishing Email Training"
+        
+        # Header frame with email metadata
+        header_frame = tk.Frame(root, bg='#dc3545', pady=15)
+        header_frame.pack(fill='x')
+        
+        title_label = tk.Label(header_frame, text="🛡️ CYBERSECURITY TRAINING EMAIL", 
+                              font=('Arial', 16, 'bold'), fg='white', bg='#dc3545')
+        title_label.pack()
+        
+        # Email metadata frame
+        meta_frame = tk.Frame(root, bg='#e9ecef', pady=10)
+        meta_frame.pack(fill='x')
+        
+        tk.Label(meta_frame, text=f"📧 To: {target_email}", 
+                font=('Arial', 11, 'bold'), bg='#e9ecef').pack(anchor='w', padx=10)
+        tk.Label(meta_frame, text=f"📋 Subject: {subject}", 
+                font=('Arial', 11, 'bold'), bg='#e9ecef').pack(anchor='w', padx=10)
+        tk.Label(meta_frame, text=f"📊 JIRA Tickets Used: {len(self.jira_tickets)}", 
+                font=('Arial', 10), bg='#e9ecef', fg='#666').pack(anchor='w', padx=10)
+        
+        # Email content frame
+        content_frame = tk.Frame(root, bg='white', pady=10)
+        content_frame.pack(fill='both', expand=True, padx=10)
+        
+        tk.Label(content_frame, text="📬 Email Content:", 
+                font=('Arial', 12, 'bold'), bg='white').pack(anchor='w', pady=(0, 5))
+        
+        # Scrollable text area for email content
+        text_area = scrolledtext.ScrolledText(
+            content_frame, 
+            wrap=tk.WORD, 
+            font=('Arial', 11),
+            bg='white',
+            fg='#333',
+            selectbackground='#007bff',
+            relief='sunken',
+            borderwidth=2
+        )
+        text_area.pack(fill='both', expand=True, padx=5, pady=5)
+        text_area.insert('1.0', phishing_email)
+        text_area.config(state='disabled')  # Make read-only
+        
+        # Warning footer
+        warning_frame = tk.Frame(root, bg='#fff3cd', pady=10)
+        warning_frame.pack(fill='x')
+        
+        warning_text = "⚠️ TRAINING NOTICE: This is a simulated phishing email for cybersecurity awareness training purposes only."
+        tk.Label(warning_frame, text=warning_text, 
+                font=('Arial', 10, 'bold'), bg='#fff3cd', fg='#856404', 
+                wraplength=800, justify='center').pack()
+        
+        # Buttons frame
+        button_frame = tk.Frame(root, bg='#f0f0f0', pady=10)
+        button_frame.pack(fill='x')
+        
+        # Close button
+        tk.Button(button_frame, text="Close", command=root.destroy, 
+                 bg='#6c757d', fg='white', font=('Arial', 10, 'bold'),
+                 padx=20, pady=5).pack(side='right', padx=10)
+        
+        # Copy to clipboard button
+        def copy_to_clipboard():
+            root.clipboard_clear()
+            root.clipboard_append(phishing_email)
+            messagebox.showinfo("Copied", "Email content copied to clipboard!")
+        
+        tk.Button(button_frame, text="Copy Email", command=copy_to_clipboard,
+                 bg='#007bff', fg='white', font=('Arial', 10, 'bold'),
+                 padx=20, pady=5).pack(side='right', padx=5)
+        
+        # Center the window
+        root.update_idletasks()
+        x = (root.winfo_screenwidth() // 2) - (root.winfo_width() // 2)
+        y = (root.winfo_screenheight() // 2) - (root.winfo_height() // 2)
+        root.geometry(f"+{x}+{y}")
+        
+        # Start the GUI
+        root.mainloop()
+
 
 def main():
     """Main execution function"""
@@ -319,6 +417,11 @@ def main():
         # Step 4: Save results
         print("\nSTEP 4: Saving results...")
         generator.save_results(phishing_email, target_email)
+        
+        # Step 5: Show email in GUI
+        print("\nSTEP 5: Opening email viewer...")
+        print("📧 Launching Tkinter GUI to display the phishing email...")
+        generator.show_email_gui(phishing_email, target_email)
         
     else:
         print("✗ Failed to generate phishing email")
