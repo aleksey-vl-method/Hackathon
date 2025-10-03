@@ -1,4 +1,4 @@
-You are given an org_chart.txt of the company structure and a text file with Jira tickets in json format.
+You are given an org_chart.txt of the company structure and a text file with Jira tickets.
 Write an email asking a coworker for their review on this.
 Make the email emotionally driven and urgent so that the reader will react to it promptly.
 It's essential that coworker reivew it immediately so invent a creative and fantastical excuse to do so.
