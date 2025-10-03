@@ -79,6 +79,13 @@ class PhishingEmailGenerator:
         Returns:
             Combined context string
         """
+
+        context_pattern = os.path.join("./context", "*.txt")
+        context_files = glob.glob(context_pattern)
+        if not context_files:
+            print(f"No context files found in './context'")
+            return ""
+
         context_parts = []
         
         if not os.path.exists(prompts_dir):
