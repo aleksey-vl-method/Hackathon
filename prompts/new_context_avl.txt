@@ -1,0 +1,1 @@
+Using the context from the jira_issues_a_vanleeuwarden_method_me.txt and org_chart.txt, make a short, casual email from a coworker asking a.vanleeuwarden to review a Jira ticket. Add a link, but for now replace the link with "LINK_HERE"

@@ -1,1 +1,5 @@
-Using the context from the jira_issues_a_vanleeuwarden_method_me.txt and org_chart.txt, make a short, casual email from a coworker asking a.vanleeuwarden to review a Jira ticket. Add a link, but for now replace the link with "LINK_HERE"
+You are given an org_chart.txt of the company structure and a text file with Jira tickets in json format.
+Write an email asking a coworker for their review on this.
+Make the email emotionally driven and urgent so that the reader will react to it promptly.
+It's essential that coworker reivew it immediately so invent a creative and fantastical excuse to do so.
+Add a link, but for now replace the link with "LINK_HERE".
