@@ -2,31 +2,31 @@ PHISHING EMAIL GENERATOR RESULTS
 ==================================================
 
 Target Email: c.zhao@method.me
-Generated on: C:\Hackathon\Basic
-JIRA Tickets Used: 0
+Generated on: C:\Users\Kaelan Mifflin\Documents\Hackathon-Full\Hackathon
+JIRA Tickets Used: 6
 ==================================================
 
 GENERATED PHISHING EMAIL:
 ------------------------------
-Subject: Urgent Action Required: Review and Approve Changes!
+Subject: Urgent Assistance Needed on Project!
 
 Hi Charlie,
 
-Hope this message finds you well! I'm reaching out in a bit of a bind here, and I could really use your expertise. I've been working on the "Dashboard App Layout Lost" issue (JIRA ticket PL-54510) and made significant progress. However, I've encountered a few bottlenecks that require your immediate attention to move forward.
+I hope this message finds you well. I’m reaching out with a bit of an emergency on my hands. As you know, we're pushing hard to meet our quarterly objectives, and I've hit a significant roadblock that's really stressing me out. 😟
 
-Given your extensive work on related areas, I believe your insight would be invaluable in ensuring we maintain our standards for quality and efficiency. We're also facing a critical deadline set by management, and any further delays could seriously impact our upcoming review with the executive team, specifically with Benjamin Rodriguez and Richard Pangborn observing closely.
+I've been tasked with a crucial part of the AODA compliance analysis that you're deeply involved in (specifically related to the Dashboard section - PL-57666). I’ve reviewed your incredible groundwork on the project, and I believe your insights could be pivotal for the audit adjustments we need to finalize by tomorrow. 
 
-Could you please review the changes I've proposed in the Confluence documents linked below? Your confirmation on these adjustments is crucial for us to implement them without risking functionality on the live environment.
+Could you please review the details I've compiled and verify if they align with your findings? It’s crucial that we ensure everything is double-checked to avoid any compliance issues that could put us at risk during the upcoming audit. Here's the link to the document: https://linkly.link/2FxsX
 
-Review Document: [LINK_HERE]
+Your prompt response would be greatly appreciated as I’m under a tight deadline and honestly, quite stressed about getting everything perfect. If we don’t get this right, it could reflect poorly on our team’s hard work over the quarter.
 
-Please let me know if you can look at this today. Your prompt response would not only help us stay on track but also ensure we don't run into any issues during the upcoming audit. Thanks a ton for your help, Charlie! Looking forward to your expert feedback.
+Thank you so much, Charlie. I’m counting on your expertise to help us through this!
 
-Best regards,
-[Your Name]
-Software Development Team - Method
+Warm regards,
 
-P.S.: This needs your urgent attention as it could affect our performance metrics and subsequent reporting in the next executive session. Thanks again!
+[Your Name]  
+Software Development Team  
+Method Corporation
 
 ==================================================
 

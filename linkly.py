@@ -1,17 +1,15 @@
 # Generate a 1-shot link with the Linkly API
-
+from dotenv import load_dotenv
 import os
 import requests
 
-def create_linkly_oneshot_link(email, api_key, workspace_id, url, name, utm_source):
-	api_endpoint = "https://api.linklyhq.com/v1/link/create"  # Replace with actual endpoint if different
+def create_linkly_oneshot_link(email, api_key, workspace_id, url):
+	api_endpoint = "https://app.linklyhq.com/api/v1/link"  # Replace with actual endpoint if different
 	payload = {
 		"email": email,
 		"api_key": api_key,
 		"workspace_id": workspace_id,
-		"url": url,
-		"name": name,
-		"utm_source": utm_source
+		"url": url
 	}
 	headers = {
 		"Content-Type": "application/json"
@@ -28,9 +26,10 @@ def create_linkly_oneshot_link(email, api_key, workspace_id, url, name, utm_sour
 
 # Example usage: reads sensitive info from environment variables
 if __name__ == "__main__":
-	email = os.environ.get("LINKLY_EMAIL")
-	api_key = os.environ.get("LINKLY_API_KEY")
-	workspace_id = os.environ.get("LINKLY_WORKSPACE_ID")
+	load_dotenv()
+	email = os.getenv("LINKLY_EMAIL")
+	api_key = os.getenv("LINKLY_API_KEY")
+	workspace_id = os.getenv("LINKLY_WORKSPACE_ID")
 	if not (email and api_key and workspace_id):
 		print("Please set LINKLY_EMAIL, LINKLY_API_KEY, and LINKLY_WORKSPACE_ID environment variables.")
 	else:
@@ -44,7 +43,5 @@ if __name__ == "__main__":
 			email=email,
 			api_key=api_key,
 			workspace_id=workspace_id,
-			url="https://www.method.me",
-			name="My New Tracking Link",
-			utm_source="newsletter"
+			url="www.method.me"
 		)
